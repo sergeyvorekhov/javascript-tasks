@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 12px 20px;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tab.active {
+    background-color: #2878d0;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    white-space: nowrap;
+}
+
+th {
+    background-color: #2878d0;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.add-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: 12px;
+    padding: 12px;
+}
+
+.add-form h3 {
+    width: 100%;
+    margin: 0 0 8px;
+}
+
+.add-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.add-form input {
+    width: 150px;
+    max-width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.add-form button {
+    padding: 8px 14px;
+    cursor: pointer;
+}
+
+.add-button {
+    margin-bottom: 15px;
+    padding: 10px 16px;
+    cursor: pointer;
+}
