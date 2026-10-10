@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dealership</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>DB of Car Dealership</h1>
+
+    <div class="tabs">
+        <button class="tab active" data-tab="cars">
+            Cars
+        </button>
+        <button class="tab" data-tab="employees">
+            Workers
+        </button>
+        <button class="tab" data-tab="clients">
+            Customers
+        </button>
+    </div>
+
+    <section id="cars" class="tab-content active">
+        <h2>Auto List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Brand</th>
+                    <th>Model</th>
+                    <th>Year</th>
+                    <th>Colour</th>
+                    <th>Price ($)</th>
+                    <th>Fuel</th>
+                </tr>
+            </thead>
+            <tbody id="cars-body"></tbody>
+        </table>
+    </section>
+
+    <section id="employees" class="tab-content">
+        <h2>List of Workers</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Position</th>
+                    <th>Phone</th>
+                    <th>Salary ($)</th>
+                    <th>Date of Acceptance</th>
+                </tr>
+            </thead>
+            <tbody id="employees-body"></tbody>
+        </table>
+    </section>
+
+    <section id="clients" class="tab-content">
+        <h2>Customer list</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Phone</th>
+                    <th>E-mail</th>
+                    <th>City</th>
+                    <th>Date of Registration</th>
+                </tr>
+            </thead>
+            <tbody id="clients-body"></tbody>
+        </table>
+    </section>
+</body>
+</html>
