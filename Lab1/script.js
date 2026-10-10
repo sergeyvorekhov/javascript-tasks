@@ -91,6 +91,31 @@ const clients = [
     }
 ];
 
+// 4. Data of Brands
+const brands = [
+    {
+        id: 1,
+        Name: "BMW",
+        Producer: "Shevchenko",
+        country: "Germany",
+        registrationDate: "2025-02-12"
+    },
+    {
+        id: 2,
+        Name: "Fiat",
+        Producer: "Fiat",
+        country: "Italy",
+        registrationDate: "2025-03-18"
+    },
+    {
+        id: 3,
+        Name: "Tesla",
+        Producer: "Musk",
+        country: "USA",
+        registrationDate: "2025-05-05"
+    }
+];
+
 // Function of Table Row Creation
 function renderTable(data, tableBodyId, fields) {
     const tbody = document.getElementById(tableBodyId);
@@ -134,6 +159,15 @@ renderTable(clients, "clients-body", [
     "phone",
     "email",
     "city",
+    "registrationDate"
+]);
+
+// Show brands
+renderTable(brands, "brands-body", [
+    "id",
+    "Name",
+    "Producer",
+    "country",
     "registrationDate"
 ]);
 
